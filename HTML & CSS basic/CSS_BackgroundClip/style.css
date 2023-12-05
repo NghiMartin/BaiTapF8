@@ -1,0 +1,11 @@
+.header {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 30px;
+    border: 10px dashed #cccc;
+    background-clip: border-box; /* đổ bg từ border */
+    background-clip: padding-box; /* đổ bg từ padding */
+    background-clip: content-box; /* đổ bg từ content */
+
+}

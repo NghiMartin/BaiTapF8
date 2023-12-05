@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box::before{
+            content: ""; /* ko co gì cũng phải cho vào mới chạy đc*/
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #cccc;
+        }
+        .box::after{
+            content: "Hello cac ban"; /* ko co gì cũng phải cho vào mới chạy đc*/
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #cccc;
+        }
+        h1::first-letter{ /* chữ đầu tiên */
+            font-size: 60px;
+        }
+        h1::first-line {
+            color: red;
+        }
+        h1::selection{ /* dùng chuột bôi lên text sẽ đổi màu */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+    <h1>Css  pseudo-elements <br> Dong thu 2</h1>
+
+    <ul>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
+        <li>::first-line</li>
+        <li>::selection</li>
+    </ul>
+</body>
+</html>

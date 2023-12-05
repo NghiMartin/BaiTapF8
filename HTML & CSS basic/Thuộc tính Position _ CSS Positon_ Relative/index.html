@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 10000px;
+        }
+
+        h1 {
+            position: relative;
+        }
+        .header{
+            margin-top: 40px;
+            width: 100%;
+            height: 50px;
+            background-color: violet;
+            position: sticky;
+            position: -webkit-sticky; /* thèn này phải định nghĩa nữa */
+            top :0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <h1>position: Sinh ra để sử dụng cho 1 element con muốn di chuyển xung quanh thẻ cha</h1>
+
+    <ul>
+        <li>relative</li> <!-- vị trí tương đối -->
+        <li>absolute</li> <!-- vị trí tuyệt đối -->
+        <li>Fixed</li>
+        <li>Sticky</li> 
+        <!-- sticky thường hỗ trợ 1 vài trình duyệt thui, nên ít sài  -->
+    </ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://homiedev.com/tim-hieu-falsy-values-trong-javascript/"></a>
+    <h1>Falsy Values</h1>
+    <span>Hiểu một cách đơn giản, falsy values trong JavaScript là những giá trị mà khi chuyển đổi kiểu thành Boolean, thì kết quả sẽ là giá trị false. Những giá trị này bao gồm: undefined, null, NaN, 0, -0, 0n, ""(Empty string value), false.</span>
+
+    <script>
+        //Mot so vi du ve falsy values
+        let string = ""; // falsy
+
+        let zero = 0; // falsy
+
+        let emptyArray = []; //  truthy
+
+        let emptyObject = {}; // truthy
+        
+        // Các bạn có thể thấy ở trên biến emptyArray và emptyObject khi mới học, mình nghĩ một số bạn hay lầm tưởng đây là một falsy value,
+        //  vì trong mảng hay object không chứa giá trị nào 🥸. Tuy nhiên thì đây lại là một giá trị truthy. truthy values là các giá trị khi chuyển kiểu thành Boolean sẽ là giá trị true, tất cả giá trị là truthy nếu chúng không phải là những giá trị thuộc falsy values.
+    </script>
+</body>
+</html>

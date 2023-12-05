@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .box{
+                background: rgb(200,200,45);
+                width: calc(120px / 20px); /* ham tin toan */
+                width: calc(80% + 20%); /* ham tin toan su dung %*/
+
+            }
+            .box::after{
+                    content: attr(data-title);
+            }
+            a::after { /* after before gọi là  lớp giả */
+                content: "(" attr(href) ")"; /* lấy attribute của thẻ a chèn  vào sau nội dung */
+            }
+    </style>
+</head>
+<body>
+    <div class="box" data-title = "Đây là box màu vàng "></div>
+    <a href="">Hoc laptrinh </a>
+    <h1>CSS functions</h1>
+
+    <ul>
+        <li>var()</li>
+        <li>linear-gradient()</li>
+        <li>rgba()</li>
+        <li>rgb()</li>
+        <li>calc()</li>
+        <li>attr()</li>
+    </ul>
+</body>
+</html>

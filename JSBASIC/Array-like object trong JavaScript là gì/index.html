@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array-like object trong JavaScript là gì?</h1>
+    <span>Trong JavaScript, object được sử dụng để lưu trữ nhiều giá trị. Chúng ta có thể tạo một object bằng dấu ngoặc nhọn { } với những thuộc tính (property) bên trong nó.</span>
+    <span>Mảng trong JavaScript là một tập hợp có thứ tự và có thể chứa giá trị với kiểu dữ liệu khác nhau. Mảng có thể được tạo bằng dấu ngoặc vuông [ ], các phần tử sẽ nằm trong nó.</span>
+
+<script>
+// Quay trở lại với Array-like, đây chính xác là một object, tuy nhiên nó có những điểm đặc biệt sau:
+
+// Có thuộc tính length của một số nguyên không âm và thuộc tính được lập chỉ mục index (với key là các số). Thuộc tính được lập chỉ mục tức là chúng ta có thể truy xuất các giá trị giống như array, ví dụ array_like[0].
+// Không có bất kỳ các method của Array như: push, pop, join, map, ...
+// Dưới đây là một ví dụ về Array-like object:
+
+const arr_like = {0: 'JavaScript', 1: 'ReactJS', 2: 'GatsbyJS', length: 3};
+
+// Với Array-like object chúng ta có thể truy xuất các giá trị như sau:
+arr_like[1]; // 'ReactJS'
+arr_like.length; // 3
+
+// Nếu tìm hiểu kỹ thì chúng ta sẽ biết array-like hoàn toàn khác với một mảng bình thường, nó không được tạo bởi Array() constructor hay sử dụng ký tự []. 
+//Vì lý do đó Array-like sẽ không được kế thừa bất cứ thứ gì từ Array.prototype nên chúng ta sẽ không thấy các method của array khi sử dụng Array-like.
+
+// Để rõ ràng hơn thì các bạn có thể kiểm tra nó sử dụng Array.isArray():
+Array.isArray(arr_like); // false
+
+</script>
+</body>
+</html>

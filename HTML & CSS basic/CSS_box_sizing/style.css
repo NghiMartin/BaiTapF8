@@ -1,0 +1,13 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #cccc;
+    padding: 20px;  /* nếu padding quá lớn mức cho phép thì box-sizing hết cứu nha*/
+    border: 5px unset #4888;
+    box-sizing: content-box; /* này là mặc định của nó */
+    box-sizing: border-box;
+    box-sizing: unset; /* này là huỷ bỏ attribute box-sizing*/
+    
+}
+
+/*box-sizing sinh ra để giữ nguyên được kích thước ban đầu khi sử dụng padding hoặc border.

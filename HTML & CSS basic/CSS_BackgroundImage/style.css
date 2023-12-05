@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(60deg, #049888, #4444), url(https://images.unsplash.com/photo-1511289081-d06dda19034d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxhc2h8ZW58MHx8MHx8fDA%3D) ;
+    background-image:linear-gradient(90deg,rgba(255,255,0,0.2), rgba(0,0,255,0.2)), url(https://media.istockphoto.com/id/1010306032/vi/vec-to/dog-paw-li%E1%BB%81n-m%E1%BA%A1ch-m%C3%B4-h%C3%ACnh-vector-m%C3%A8o-d%E1%BA%A5u-ch%C3%A2n-m%C3%A8o-con-puppy-tile-n%E1%BB%81n-l%E1%BA%B7p-l%E1%BA%A1i-h%C3%ACnh-n%E1%BB%81n-c%C3%B4-l%E1%BA%ADp.jpg?s=1024x1024&w=is&k=20&c=2i5VgxrC_Ml1aHiyfCE4Y8-SHUX1OF4yoQ46-5fisoM=) ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* rgba(): hệ màu red green blue alpha:độ trong suốt */
+
+/* background-size */
+.header{
+    background-size: contain; /* chấp nhận chiều ngang thôi, chấp nhận có khoảng trắng, khi scale thì nó luôn cho phép thấy được tấm hình */
+    background-size: cover; /*Lấy chiều dài hơn làm contain, chấp nhận chiều dọc luôn, chấp nhận hình ảnh bị che khuất tầm nhìn luôn, không chấp nhận có khoảng trắng*/
+}
+
+/* background-origin */
+/* Tương tự như background-clip nhưng dùng cho bg image */
+
+.header{
+    border: 20px dashed #cccc;
+    padding:30px;
+    box-sizing: border-box;
+    background-origin: content-box;
+}
+
+/* background-position */
+
+.header{
+    background-position: 50px 50px; /* bat đầu từ trục x và y */
+    background-position: top right; /* phía trên bên phải */
+    background-position: top 30px right 30px;
+    background-position: top 20% right 10%;
+
+}
+
+/* Shorthand  */
+/* background: url bgrepeat bgposition / bgsize; */
+.header{
+    background: url(https://images.unsplash.com/photo-1511289081-d06dda19034d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxhc2h8ZW58MHx8MHx8fDA%3D) ;
+}

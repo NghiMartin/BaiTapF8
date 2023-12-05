@@ -1,0 +1,11 @@
+.mystyle {
+
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
